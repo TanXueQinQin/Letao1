@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>自写版乐淘移动端</title>
+	<!-- 1. 引入mui的CSS文件 提供mui样式 -->
+	<link rel="stylesheet" href="lib/mui/css/mui.css">
+	<!-- 2. 引入字体图标的CSS文件  提供字体图标-->
+	<link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+	<!-- 3. 引入主页的less文件 注意 rel="stylesheet/less"-->
+	<link rel="stylesheet/less" href="less/index.less">
+	<!-- 4. 引入less的编译器文件 编译less -->
+	<script src="lib/less/less.js"></script>
+</head>
+<body>
+	<!-- 头部区域 -->
+	<header id="header">
+		<h4>我的乐淘云购</h4>
+		<!-- 搜索图标 使用font-awesome图标库里面的图标 -->
+		<a href="#" class="fa fa-search"></a> 
+	</header>
+	<!-- 中间主体区域 -->
+	<main id="main">
+		<!-- 轮播图区域 -->
+		<section id="slide"></section>
+		<!-- 导航区域 -->
+		<nav id="nav"></nav>
+		<!-- 广告区域 -->
+		<section id="banner"></section>
+		<!-- 品牌专区 -->
+		<section id="brand"></section>
+		<!-- 运动专区 -->
+		<section id="sport"></section>
+		<!-- 女士专区 -->
+		<section id="women"></section>
+		<!-- 男士专区 -->
+		<section id="man"></section>
+	</main>
+	<!-- 底部区域 -->
+	<footer id="footer"></footer>
+	<!-- 5. 引入mui的js文件 提供mui js插件-->
+	<script src="lib/mui/js/mui.js"></script>
+	<!-- 6. 引入zepto的js文件 操作元素发送请求 -->
+	<script src="lib/zepto/zepto.min.js"></script>
+	<!-- 7. 引入模板引擎的js文件 渲染模板的 -->
+	<script src="lib/artTemplate/template.js"></script>
+	<!-- 8. 引入主页的js文件 -->
+	<script src="js/index.js"></script>
+</body>
+</html>

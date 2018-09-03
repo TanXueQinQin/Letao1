@@ -1,0 +1,136 @@
+
+@mainColor:#006699;
+
+.bt{
+    border-top: 1px solid #ccc;
+}
+
+.bb{
+    border-bottom:1px solid #ccc;
+}
+
+.bl{
+    border-left:1px solid #ccc;
+}
+
+.br{
+    border-right:1px solid #ccc; 
+}
+
+html{
+    font-size: 100px;
+}
+
+body{
+    font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing:border-box;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+// 一般移动端清除的点击高亮，透明表示去掉
+    -wibkit-tap-highlight-color:transparent;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+    // 清除移动端默认样式
+    -webkit-appearance: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
+html,body{
+    
+    height: 100%;
+}
+
+body{
+    padding: 50px 0;
+}
+
+#main{
+    
+    position: relative;
+    height: 100%;
+}
+
+
+#header{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    background-color: @mainColor;
+    z-index: 999;
+    
+    >h4{
+        font-weight: normal;
+        text-align: center;
+        line-height: 45px;
+        margin: 0;
+        color: #fff;
+    }
+   
+    >a{
+    color: #fff;
+    &.fa-search{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size:20px;
+    }
+   
+    }
+}
+
+
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: @mainColor;
+    position: fixed;
+    bottom: 0;
+    
+    >div{
+        a{
+            text-align: center;
+            display: block;
+            color: #fff;
+            padding: 6px 0;
+            &.active{
+                color: orange;
+            }
+            >i{
+            font-size: 18px;
+            display: block;
+            }
+
+            >span{
+              font-size: 14px;
+              display: block;
+            }
+        }
+    }
+}
